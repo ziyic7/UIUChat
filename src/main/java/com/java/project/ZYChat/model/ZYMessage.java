@@ -12,9 +12,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class ZYMessage {
-    private String messageID;
     private String content;
     private String sender;
-    private String receiver;
     private ZYStatus status;
 }
