@@ -33,20 +33,16 @@ build/
 .vscode/
 
 ### Front-End ###
-frontend/node_modules/
-frontend/.pnp/
-frontend/.pnp.js
-
-frontend/coverage/
-
-frontend/build/
-
-frontend/.DS_Store
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
+web/node_modules/
+web/.pnp/
+web/.pnp.js
+web/coverage/
+web/build/
+*/.DS_Store
+web/.env.local
+web/.env.development.local
+web/.env.test.local
+web/.env.production.local
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
