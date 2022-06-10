@@ -11,15 +11,27 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @Controller
 @CrossOrigin
 public class ZYChatController {
-    @MessageMapping("/chat.join")
-    @SendTo("/topic/public")
-    public ZYMessage receiveJoinRequest(@Payload ZYMessage message) {
+    @MessageMapping("/free")
+    @SendTo("/topic/free")
+    public ZYMessage receiveFreeChatMessage(@Payload ZYMessage message) {
         return message;
     }
 
-    @MessageMapping("/chat.msg")
-    @SendTo("/topic/public")
-    public ZYMessage receiveMessage(@Payload ZYMessage message) {
+    @MessageMapping("/outdoor")
+    @SendTo("/topic/outdoor")
+    public ZYMessage receiveOutdoorMessage(@Payload ZYMessage message) {
+        return message;
+    }
+
+    @MessageMapping("/second-hand")
+    @SendTo("/topic/second-hand")
+    public ZYMessage receiveSHMessage(@Payload ZYMessage message) {
+        return message;
+    }
+
+    @MessageMapping("/leasing")
+    @SendTo("/topic/leasing")
+    public ZYMessage receiveLeasingMessage(@Payload ZYMessage message) {
         return message;
     }
 }
